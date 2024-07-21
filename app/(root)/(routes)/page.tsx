@@ -7,8 +7,6 @@ const SetupPage = () => {
   const onOpen = useStoreModal((state) => state.onOpen);
   const isOpen = useStoreModal((state) => state.isOpen);
 
-  // console.log("IsOpen state:", !isOpen)
-
   useEffect(() => {
     if (!isOpen) {
       onOpen();
@@ -16,8 +14,7 @@ const SetupPage = () => {
   }, [isOpen, onOpen])
 
   return (
-    <div className="">
-      Root page
+    <div>
     </div>
   )
 
