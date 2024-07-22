@@ -1,9 +1,17 @@
-import React from 'react'
+interface DashboardProps {
+    params: {
+        storeId: string;
+    }
+}
 
-const DashboardPage = () => {
+
+const Dashboard: React.FC<DashboardProps> = async ({
+    params
+}) => {
+
     return (
-        <div>DashboardPage</div>
+        <div>Future Dashboard</div>
     )
 }
 
-export default DashboardPage
+export default Dashboard
